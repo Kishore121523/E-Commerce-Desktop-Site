@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+* a {
+  text-decoration: none;
+}
+* li {
+  list-style-type: none;
+}
+
+.container {
+  padding: 1.5rem 12rem;
+  padding-bottom: 0;
+}
+.container .navbar {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(104, 112, 125, 0.2);
+  padding-bottom: 2rem;
+  gap: 2rem;
+}
+.container .navbar .nav-middle .nav-links {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 2rem;
+  color: hsl(219deg, 9%, 45%);
+  margin-left: 2rem;
+}
+.container .navbar .nav-middle .nav-links a {
+  transition: all 300ms ease;
+}
+.container .navbar .nav-middle .nav-links a:hover {
+  color: black;
+  cursor: pointer;
+}
+.container .navbar .nav-right {
+  margin-left: auto;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 2rem;
+}
+.container .navbar .nav-right .icon-avatar {
+  height: 2.5rem;
+}
+.container .navbar .nav-right .icon-cart {
+  height: 1.2rem;
+}
+.container .navbar .nav-right .icon-cart:hover {
+  cursor: pointer;
+}
+.container .hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 0;
+  gap: 5rem;
+}
+.container .hero-section .hero-left {
+  display: flex;
+  flex-direction: column;
+}
+.container .hero-section .hero-left .img-focus img {
+  height: 58vh;
+  border-radius: 10px;
+}
+.container .hero-section .hero-left .img-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+.container .hero-section .hero-left .img-bottom .imgOut {
+  height: 10vh;
+  transition: all 300ms ease;
+}
+.container .hero-section .hero-left .img-bottom .imgOut img {
+  border-radius: 10px;
+  height: 100%;
+}
+.container .hero-section .hero-left .img-bottom .imgOut:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.container .hero-section .hero-right {
+  padding-left: 4rem;
+}
+.container .hero-section .hero-right .hero-right-top {
+  text-transform: uppercase;
+  color: hsl(26deg, 100%, 55%);
+  padding-bottom: 1.1rem;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.container .hero-section .hero-right .hero-right-middle {
+  color: black;
+  padding-bottom: 1.7rem;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 55px;
+}
+.container .hero-section .hero-right .hero-right-body {
+  color: hsl(219deg, 9%, 45%);
+  line-height: 1.7em;
+  padding-bottom: 1.3rem;
+  font-size: 16px;
+}
+.container .hero-section .hero-right .price {
+  display: flex;
+  flex-direction: column;
+}
+.container .hero-section .hero-right .price .offer-price {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+}
+.container .hero-section .hero-right .price .offer-price p {
+  font-size: 32px;
+  justify-self: center;
+}
+.container .hero-section .hero-right .price .offer-price .offer {
+  background: hsl(25deg, 100%, 94%);
+  color: hsl(26deg, 100%, 55%);
+  font-size: 16px;
+  padding: 2px 10px;
+  border-radius: 5px;
+  margin-left: 1rem;
+}
+.container .hero-section .hero-right .price .original-price {
+  color: hsl(220deg, 14%, 75%);
+  font-weight: bold;
+  padding-top: 10px;
+}
+.container .hero-section .hero-right .hero-bottom {
+  display: flex;
+  margin-top: 2rem;
+}
+.container .hero-section .hero-right .hero-bottom .add-item {
+  display: flex;
+  width: 10rem;
+  background-color: hsl(223deg, 64%, 98%);
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 18px;
+  border-radius: 10px;
+  margin-right: 2rem;
+  border-radius: 10px;
+}
+.container .hero-section .hero-right .hero-bottom .add-item p {
+  padding: auto 4rem;
+}
+.container .hero-section .hero-right .hero-bottom .add-item .minus {
+  height: 4px;
+}
+.container .hero-section .hero-right .hero-bottom .add-item .minus:hover {
+  cursor: pointer;
+}
+.container .hero-section .hero-right .hero-bottom .add-item .plus {
+  height: 12px;
+}
+.container .hero-section .hero-right .hero-bottom .add-item .plus:hover {
+  cursor: pointer;
+}
+.container .hero-section .hero-right .hero-bottom .cart {
+  color: white;
+  background: hsl(26deg, 100%, 55%);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0 70px;
+}
+.container .hero-section .hero-right .hero-bottom .cart:hover {
+  cursor: pointer;
+}
+.container .hero-section .hero-right .hero-bottom .cart .add-to-cart-buttton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .hero-section .hero-right .hero-bottom .cart .add-to-cart-buttton img {
+  height: 1rem;
+  margin-right: 1rem;
+}
+.container .hero-section .hero-right .hero-bottom .cart .add-to-cart-buttton span {
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.active {
+  border: 3px solid rgb(255, 125, 26);
+  border-radius: 14px;
+}
+.active img {
+  opacity: 0.7;
+}
+
+.cart-details {
+  position: absolute;
+  background: white;
+  box-shadow: 5px 38px 100px -27px rgb(127, 125, 127);
+  top: 12vh;
+  right: 6vw;
+  height: auto;
+  width: 20rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+}
+.cart-details .cart-details-head {
+  border-bottom: 1px solid rgba(104, 112, 125, 0.2);
+  padding: 1rem 0.5rem;
+  width: 100%;
+  font-weight: bold;
+  padding-left: 1.5rem;
+  font-size: 14px;
+}
+.cart-details .cart-details-body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5rem 5rem;
+  color: hsl(219deg, 9%, 45%);
+}
+.cart-details .cart-details-body p {
+  white-space: nowrap;
+}
+.cart-details .cart-details-body-added .card-details-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  gap: 1rem;
+}
+.cart-details .cart-details-body-added .card-details-item img {
+  height: 3rem;
+  border-radius: 5px;
+}
+.cart-details .cart-details-body-added .card-details-item .card-item-details {
+  font-size: 13px;
+  color: hsl(220deg, 14%, 75%);
+  font-weight: 500;
+}
+.cart-details .cart-details-body-added .card-details-item .card-item-details .card-item-details {
+  padding-bottom: 5px;
+}
+.cart-details .cart-details-body-added .card-details-item .card-item-details .total {
+  color: black;
+}
+.cart-details .cart-details-body-added .card-details-item .delete-cart img {
+  height: 0.8rem;
+}
+.cart-details .cart-details-body-added .card-details-item .delete-cart:hover {
+  cursor: pointer;
+}
+.cart-details .checkout-button {
+  padding: 1.5rem;
+  padding-top: 0.5rem;
+}
+.cart-details .checkout-button .button-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(26deg, 100%, 55%);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+}
+.cart-details .checkout-button .button-out a {
+  color: white;
+  font-weight: 500;
+}
+.cart-details .checkout-button .button-out:hover {
+  cursor: pointer;
+}
+
+.div1 {
+  position: relative;
+}
+
+.div1::before {
+  content: attr(data);
+  background: hsl(26deg, 100%, 55%);
+  color: white;
+  border-radius: 10px;
+  height: 15px;
+  top: -8px;
+  left: 10px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  width: 20px;
+}/*# sourceMappingURL=styles.css.map */

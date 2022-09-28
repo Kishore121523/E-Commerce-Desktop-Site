@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/css/styles.css">
+    <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+
+<body>
+    <!-- Collections Men Women About Contact Sneaker Company Fall Limited Edition Sneakers These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer. $125.00 50%
+    $250.00 0 Add to cart -->
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo-nav">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <div class="nav-middle">
+                <ul class="nav-links">
+                    <li class="nav-link">
+                        <a>Collection</a>
+                    </li>
+                    <li class="nav-link">
+                        <a>Men</a>
+                    </li>
+                    <li class="nav-link">
+                        <a>Women</a>
+                    </li>
+                    <li class="nav-link">
+                        <a>About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a>Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div data="0" class="div1"><img class="icon-cart" src="./images/icon-cart.svg" alt=""></div>
+
+                <img class="icon-avatar " src="./images/image-avatar.png" alt="">
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div class="hero-section">
+            <div class="hero-left">
+                <div class="img-focus">
+                    <img class="imgFocussed" src="./images/image-product-1.jpg" alt="">
+                </div>
+                <div class="img-bottom">
+                    <div class="imgOut active">
+                        <img id="image-product-1" src="./images/image-product-1-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="imgOut"><img id="image-product-2" src="./images/image-product-2-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="imgOut"> <img id="image-product-3" src="./images/image-product-3-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="imgOut"> <img id="image-product-4" src="./images/image-product-4-thumbnail.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <p class="hero-right-top">Sneaker Company</p>
+                <p class="hero-right-middle">Fall Limited Edition Sneakers</p>
+                <p class="hero-right-body">These low-profile sneakers are your perfect casual wear companion. Featuring
+                    a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                <div class="price">
+                    <div class="offer-price">
+                        <p class="offer-price-amount">$125.00</p><span class="offer">50%</span>
+                    </div>
+                    <p class="original-price">$250.00</p>
+                </div>
+                <div class="hero-bottom">
+                    <div class="add-item">
+                        <img class="minus" src="./images/icon-minus.svg" alt="">
+                        <p class="item-number">0</p>
+                        <img class="plus" src="./images/icon-plus.svg" alt="">
+                    </div>
+                    <div class="cart">
+                        <span class="add-to-cart-buttton">
+                            <img src="./images/icon-cart-bottom.svg" alt="">
+                            <span>Add to cart</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: none;" class="cart-details">
+        <div class="cart-details-head">
+            <p>Cart</p>
+        </div>
+        <div class="cart-details-body">
+            <p>Your cart is empty.</p>
+        </div>
+        <div style="display: none;" class="cart-details-body-added">
+            <div class="card-details-item">
+                <img src="./images/image-product-1-thumbnail.jpg" alt="">
+                <div class="card-item-details">
+                    <p class="card-item-details">Fall Limited Edition Sneakers</p>
+                    <p> <span class="amount">125.00</span> x <span class="quantity">3</span> <span
+                            class="total">$375</span></p>
+                </div>
+                <div class="delete-cart">
+                    <img src="./images/icon-delete.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div style="display: none;" class="checkout-button">
+            <div class="button-out">
+                <a href="#">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
